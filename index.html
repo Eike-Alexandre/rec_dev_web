@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt_Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Recuperação de Desenvolvimeno Web</title>
+</head>
+
+<body>
+    <h2>Prova de tecnologias</h2>
+    <div id="menu">
+        <ul>
+            <li><a href="index.html" onclick="home();">Home</a></li>
+            <li><a href="#" onclick="cadastrar();"></a>Cadastro</li>
+            <li><a href="#" onclick="tarefa();"></a>Tarefas</li>
+            <li><a href="#">Sobre</a></li>
+        </ul>
+    </div>
+
+    <div id="centro">
+        <div id="tarefa">
+            Tarefa: <br>
+            <input type="text" id="nome" placeholder="Nome"> <br>
+            <input type="text" placeholder="Login"> <br>
+            <input class="botao"> <br>
+            <!-- botao de troca de texto -->
+            <button class="botao" onclick="troca()">Troca de texto</button>
+            <!-- remove o botao -->
+            <button class="botao" onclick="remove()">Remover Botao</button>
+        </div>
+        <div id="imagem">
+            <img src="smile.jpg" width="200" height="200">
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
