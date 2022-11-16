@@ -1,6 +1,6 @@
 // 1 - Troque a cor e a fonte do título da prova. Tag <h2>. Cor e fonte de sua preferência. (1,0)
 
-document.getElementsByTagName('h2')[0].style.color = 'blue'
+document.getElementsByTagName('h2')[0].style.color = '#edf0f1'
 document.getElementsByTagName('h2')[0].style.fontfamily = 'Arial'
 
 
@@ -33,10 +33,10 @@ z.addEventListener("click",
 
 //  6 - Faça uma função chamada converteMaiuscula que pega o nome digitado pelo usuário e o converte para maiúsculo. (1,0)
 
-var nome = document.getElementById('nome');
+var nome = document.getElementById('nome').value;
 
 function converteMaiuscula() {
-    nome.value = nome.value.toUpperCase();
+    nome = nome.toUpperCase();
 }
 
 //  7 - Imprima no console o valor digitado na caixa de texto <input> de duas formas diferentes. (1,0)
@@ -44,15 +44,19 @@ function converteMaiuscula() {
 var b = document.getElementsByTagName("input")[2].value;
 console.log(b);
 
-var b = document.getElementsByClassName("botao")[0].value;
-console.log(b);
+var c = document.getElementsByClassName("botao")[0].value;
+console.log(c);
 
 //  8 - Mostre no console uma mensagem se o nome e o login digitados pelo usuário são iguais ou diferentes. (2,0)
 var nome = document.getElementById('nome').value;
 var login = document.getElementsByTagName('input')[1].value;
 function validar() {
-    if (nome == login) 
-        console.log("Nome iguais!")
-    else 
-            console.log("Nomes diferentes!"); 
+    if (nome == login) {
+        console.log("Nome iguais!");
+    }
+        
+    else {
+        console.log("Nomes diferentes!");
+    }
+        
 }
