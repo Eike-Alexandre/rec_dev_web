@@ -25,20 +25,34 @@ document.body.appendChild(p)
 
 //  5 - Adicionar um evento ao botão para removê-lo ao clicá-lo. (1,0)
 
-function remove() {
-    document.getElementsByTagName('button')[1].style.display = 'none'
-}
+var z = document.getElementsByClassName("botao")[2];
+z.addEventListener("click",
+    function () {
+        z.remove();
+    })
 
 //  6 - Faça uma função chamada converteMaiuscula que pega o nome digitado pelo usuário e o converte para maiúsculo. (1,0)
 
-function converteMaiuscula() {
-    var nome = document.getElementsById('nome').value;
-    nome.toUpperCase();
+var nome = document.getElementById('nome');
 
+function converteMaiuscula() {
+    nome.value = nome.value.toUpperCase();
 }
 
 //  7 - Imprima no console o valor digitado na caixa de texto <input> de duas formas diferentes. (1,0)
 
+var b = document.getElementsByTagName("input")[2].value;
+console.log(b);
 
+var b = document.getElementsByClassName("botao")[0].value;
+console.log(b);
 
 //  8 - Mostre no console uma mensagem se o nome e o login digitados pelo usuário são iguais ou diferentes. (2,0)
+var nome = document.getElementById('nome').value;
+var login = document.getElementsByTagName('input')[1].value;
+function validar() {
+    if (nome == login) 
+        console.log("Nome iguais!")
+    else 
+            console.log("Nomes diferentes!"); 
+}
